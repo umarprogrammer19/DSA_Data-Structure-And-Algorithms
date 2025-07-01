@@ -68,12 +68,21 @@
 # print(sum)
 
 # Check the number is palindrome or not
-num7 = input("Enter a number to check if it is a palindrome: ")
+# num7 = input("Enter a number to check if it is a palindrome: ")
 
-if num7.isdigit():
-    if num7 == num7[::-1]:
-        print(num7, "is a palindrome")
-    else:
-        print(num7, "is not a palindrome")
-else:
-    print("Invalid input. Please enter a numeric value.")
+# if num7.isdigit():
+#     if num7 == num7[::-1]:
+#         print(num7, "is a palindrome")
+#     else:
+#         print(num7, "is not a palindrome")
+# else:
+#     print("Invalid input. Please enter a numeric value.")
+
+# Print numbers from 1 to 100, replace multiples of 3 with Fizz, 5 with Buzz, and both with FizzBuzz.
+for i in range(1, 101):
+    output = ""
+    if i % 3 == 0:
+        output += "Fizz"
+    elif i % 5 == 0:
+        output += "Buzz"
+    print(output or i)
