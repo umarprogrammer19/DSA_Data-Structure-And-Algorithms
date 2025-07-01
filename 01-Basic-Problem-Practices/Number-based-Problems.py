@@ -23,18 +23,34 @@
 # print(largest)
 
 # Check if a number is prime.
-num3 = 5
-flag = False
+# num3 = 4
+# flag = False
 
-if num3 == 0 or num3 == 1:
-    print("Number is not prime")
-elif num3 > 1:
-    for i in range(2, num3):
-        if (num3 % i) == 0:
-            flag = True
-            break
+# if num3 == 0 or num3 == 1:
+#     print("Number is not prime")
+# elif num3 > 1:
+#     for i in range(2, num3):
+#         if (num3 % i) == 0:
+#             flag = True
+#             break
 
-if flag:
-    print(num3, "is not a prime number")
-else:
-    print(num3, "is a prime number")
+# if flag:
+#     print(num3, "is not a prime number")
+# else:
+#     print(num3, "is a prime number")
+
+
+# Find the factorial of a number.
+# num4 = int(input("Enter a number to find the factorial: "))
+# fact = 1
+# for i in range(1, num4 + 1):
+#     fact *= i
+
+# print(fact)
+
+# Generate Fibonacci sequence up to n terms.
+# num5 = int(input("Enter number: "))
+# a, b = 0, 1
+# for _ in range(num5):
+#     print(a, end=" ")
+#     a, b = b, a + b
