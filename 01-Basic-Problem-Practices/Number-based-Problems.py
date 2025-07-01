@@ -54,3 +54,15 @@
 # for _ in range(num5):
 #     print(a, end=" ")
 #     a, b = b, a + b
+
+# Find the sum of digits of a number.
+num6 = input("Enter a number to find the sum of a digit of a number: ")
+
+# In One Line
+print(sum(int(c) for c in num6))
+
+# For Single Line
+sum = 0
+for c in num6:
+    sum += int(c)
+print(sum)
