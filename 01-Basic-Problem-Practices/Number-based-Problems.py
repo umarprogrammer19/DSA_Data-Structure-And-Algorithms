@@ -56,13 +56,24 @@
 #     a, b = b, a + b
 
 # Find the sum of digits of a number.
-num6 = input("Enter a number to find the sum of a digit of a number: ")
+# num6 = input("Enter a number to find the sum of a digit of a number: ")
 
 # In One Line
-print(sum(int(c) for c in num6))
+# print(sum(int(c) for c in num6))
 
 # For Single Line
-sum = 0
-for c in num6:
-    sum += int(c)
-print(sum)
+# sum = 0
+# for c in num6:
+#     sum += int(c)
+# print(sum)
+
+# Check the number is palindrome or not
+num7 = input("Enter a number to check if it is a palindrome: ")
+
+if num7.isdigit():
+    if num7 == num7[::-1]:
+        print(num7, "is a palindrome")
+    else:
+        print(num7, "is not a palindrome")
+else:
+    print("Invalid input. Please enter a numeric value.")
