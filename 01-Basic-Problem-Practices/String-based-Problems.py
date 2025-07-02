@@ -50,5 +50,13 @@ print(rev)
 
 # Capitalize the first letter of each word in a string.
 s = input("Enter a string to Capitalize 1st car in string: ")
-print(" ".join([c.capitalize() for c in s.split()]))
+print(" ".join([c.capitalize() for c in s.strip().split()]))
+print(s.title())
 
+# Count the number of words in a sentence.
+s = input("Enter a string to find a number of words in it ")
+print(len(s.split()))
+
+# Replace all spaces in a string with hyphens.
+s = input("Enter a string to join string with -: ")
+print(s.replace(" ", "-"))
