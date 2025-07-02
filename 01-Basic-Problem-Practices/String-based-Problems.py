@@ -18,3 +18,25 @@ for val in string2:
 
 print("Vowels:", vov)
 print("Consonants:", cons)
+
+# Find the frequency of each character in a string.
+s = input("Enter a string to find the frequency in it: ")
+freq = {}
+
+# Simple Method
+for c in s:
+    if c in freq:
+        freq[c] += 1
+    else:
+        freq[c] = 1
+print(freq)
+
+# With Counter
+from collections import Counter
+
+freq = Counter(s)
+print(dict(freq))
+
+# Dictionary Comprehension
+freq = {c: s.count(c) for c in s}
+print(freq)
