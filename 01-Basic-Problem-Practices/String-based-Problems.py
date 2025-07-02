@@ -6,11 +6,11 @@ else:
     print(string, "is not Palindrome")
 
 # Count vowels and consonants in a string.
-string2 = input("Enter a string to count the vowels and consonants: ")
+s = input("Enter a string to count the vowels and consonants: ")
 vowels = ["a", "e", "i", "o", "u"]
 vov, cons = 0, 0
 
-for val in string2:
+for val in s:
     if val.lower() in vowels:
         vov += 1
     elif val.isalpha():
@@ -40,3 +40,10 @@ print(dict(freq))
 # Dictionary Comprehension
 freq = {c: s.count(c) for c in s}
 print(freq)
+
+# Reverse a string without using built-in functions.
+s = input("Enter a string to reverse string: ")
+rev = ""
+for c in s:
+    rev = c + rev
+print(rev)
