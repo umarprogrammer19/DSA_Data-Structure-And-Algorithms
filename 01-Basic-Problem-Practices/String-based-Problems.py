@@ -47,3 +47,8 @@ rev = ""
 for c in s:
     rev = c + rev
 print(rev)
+
+# Capitalize the first letter of each word in a string.
+s = input("Enter a string to Capitalize 1st car in string: ")
+print(" ".join([c.capitalize() for c in s.split()]))
+
