@@ -57,6 +57,6 @@ print(s.title())
 s = input("Enter a string to find a number of words in it ")
 print(len(s.split()))
 
-# Replace all spaces in a string with hyphens.
+# Replace all spaces in a string with hyphens (-).
 s = input("Enter a string to join string with -: ")
 print(s.replace(" ", "-"))
