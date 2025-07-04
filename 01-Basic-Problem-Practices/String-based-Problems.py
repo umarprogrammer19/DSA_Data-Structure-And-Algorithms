@@ -60,3 +60,12 @@ print(len(s.split()))
 # Replace all spaces in a string with hyphens (-).
 s = input("Enter a string to join string with -: ")
 print(s.replace(" ", "-"))
+
+# Remove all special characters from a string.
+import string
+
+s = input("Enter a string to remove all the special characters in it: ")
+final_string_without_special_characters = "".join(
+    char for char in s if char not in string.punctuation
+)
+print(final_string_without_special_characters)
