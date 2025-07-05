@@ -79,6 +79,7 @@ print(max(words, key=len) if len(words) > 0 else False)
 s = input("Enter two space-separated words to check if they are anagrams: ")
 words = s.split()
 
+# Try using sort method
 if len(words) == 2:
     str1 = words[0].lower()
     str2 = words[1].lower()
