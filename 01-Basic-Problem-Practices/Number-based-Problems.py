@@ -98,7 +98,7 @@ def compute_hcf(x, y):
 hcf = compute_hcf(24, 54)
 print(f"The hcf is {hcf}")
 
-
+# LCM by HCF
 def compute_lcm(x, y):
     lcm = (x * y) // compute_hcf(x, y)
     return lcm
