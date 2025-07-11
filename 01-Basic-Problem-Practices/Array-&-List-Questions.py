@@ -35,3 +35,13 @@ def setZeroAtEnd(nums):
 
 
 print(setZeroAtEnd(li))
+
+
+# Find the common elements in two lists
+def find_common(l1, l2):
+    s1, s2 = set(l1), set(l2)
+    return s1.intersection(s2)
+
+
+same = list(find_common([1, 2, 3, 4], [3, 4, 55, 6, 1]))
+print(same)
