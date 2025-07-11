@@ -18,3 +18,20 @@ else:
 # Remove duplicates from a list
 li = [1, 2, 3, 4, 5, 1, 1, 2, 3]
 print(list(set(li)))
+
+# Find the second largest number in a list
+arr = [10, 20, 4, 45, 99, 99]
+unique = list(set(arr))
+unique.sort()
+second_largest = unique[-2]
+print("Second largest:", second_largest)
+
+# Move all zeros to the end of the list
+li = [1, 2, 3, 4, 0, 5, 6, 7, 8, 0, 9, 0, 11]
+
+
+def setZeroAtEnd(nums):
+    return sorted(nums, reverse=True)
+
+
+print(setZeroAtEnd(li))
