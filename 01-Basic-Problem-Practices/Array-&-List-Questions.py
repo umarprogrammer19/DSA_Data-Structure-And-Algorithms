@@ -54,4 +54,4 @@ list1 = [1, 2, 2, 3]
 list2 = [3, 2, 1, 2]
 
 are_equal = Counter(list1) == Counter(list2)
-print(are_equal) # True
+print(are_equal)  # True
