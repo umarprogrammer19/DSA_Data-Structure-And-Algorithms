@@ -45,3 +45,13 @@ def find_common(l1, l2):
 
 same = list(find_common([1, 2, 3, 4], [3, 4, 55, 6, 1]))
 print(same)
+
+
+# Check if two lists have the same elements (regardless of order)
+from collections import Counter
+
+list1 = [1, 2, 2, 3]
+list2 = [3, 2, 1, 2]
+
+are_equal = Counter(list1) == Counter(list2)
+print(are_equal) # True
