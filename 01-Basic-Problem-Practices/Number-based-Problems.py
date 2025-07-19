@@ -26,6 +26,7 @@ print(largest)
 num3 = 4
 flag = False
 
+# checking the condition of 1 and 0
 if num3 == 0 or num3 == 1:
     print("Number is not prime")
 elif num3 > 1:
