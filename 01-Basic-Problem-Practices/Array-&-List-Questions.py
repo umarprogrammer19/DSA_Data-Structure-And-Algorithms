@@ -34,6 +34,7 @@ def setZeroAtEnd(nums):
     return sorted(nums, reverse=True)
 
 
+# Print the output
 print(setZeroAtEnd(li))
 
 
