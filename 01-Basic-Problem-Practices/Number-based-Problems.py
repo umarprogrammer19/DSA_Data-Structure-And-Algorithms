@@ -34,7 +34,7 @@ elif num3 > 1:
         if (num3 % i) == 0:
             flag = True
             break
-
+# flag concept
 if flag:
     print(num3, "is not a prime number")
 else:
@@ -91,6 +91,7 @@ for i in range(1, 101):
 
 # Find the HCF Between two numbers
 def compute_hcf(x, y):
+    # While loop
     while y:
         x, y = y, x % y
     return x

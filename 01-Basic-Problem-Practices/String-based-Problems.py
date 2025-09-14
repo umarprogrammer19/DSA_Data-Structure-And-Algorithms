@@ -81,6 +81,7 @@ words = s.split()
 
 # Try using sort method
 if len(words) == 2:
+    # extracting the words differently 
     str1 = words[0].lower()
     str2 = words[1].lower()
 
