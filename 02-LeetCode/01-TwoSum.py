@@ -29,3 +29,21 @@
 
 # Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity?
 
+# Solution
+
+from typing import List
+
+
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        for i in range(len(nums)):
+            for j in range(i + 1, len(nums)):
+                if nums[i] + nums[j] == target:
+                    return [i, j]
+
+
+solution = Solution()
+print(solution.twoSum(nums=[2, 7, 11, 15], target=9))  # [0, 1]
+print(solution.twoSum(nums=[3, 2, 4], target=6))  # [1, 2]
+print(solution.twoSum(nums=[3, 3], target=6))  # [0, 1]
+
