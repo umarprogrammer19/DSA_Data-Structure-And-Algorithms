@@ -65,3 +65,5 @@ print(solution.twoSum(nums=[3, 3], target=6))  # [0, 1]
 # Then j = 1, so nums[j] = 7 -> because index 1 has value which is 7
 # nums[0] + nums[1] = 2 + 7 = 9, which is equal to the target
 # Therefore, the function returns [0, 1]
+
+# Time Complexity: O(n²)
