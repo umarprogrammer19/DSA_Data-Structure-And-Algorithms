@@ -1,4 +1,4 @@
-# 1. Two Sum (1st Of Jan 2025)
+# 1. Two Sum (1st Of Jan 2025) -> Brute Force Algorithm
 
 # Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 
