@@ -78,7 +78,7 @@ print(solution.repeatedNTimes([5, 1, 5, 2, 5, 3, 5, 4]))
 # Space Complexity: O(1)
 # No extra data structure is used.
 
-# Optimized Approach Using Set
+# Hash Set Approach -> Optimized Approach Using Set 
 class Solution:
     def repeatedNTimes(self, nums: List[int]) -> int:
         seen = set()
@@ -93,3 +93,23 @@ print(solution.repeatedNTimes([1, 2, 3, 3]))
 print(solution.repeatedNTimes([2, 1, 2, 5, 3, 2]))
 print(solution.repeatedNTimes([5, 1, 5, 2, 5, 3, 5, 4]))
 
+# Explanation
+# In this approach, I use a set to keep track of elements that have already appeared in the array.
+# A set is used because it allows fast lookup.
+
+# The method works as follows:
+# Create an empty set called seen
+# Loop through each number in the array
+
+# For each number:
+# If it already exists in the set, it means the number is repeated, so return it
+# Otherwise, add the number to the set
+# Because the repeated element appears many times, it will be detected quickly.
+
+# Example
+# Input: nums = [1, 2, 3, 3]
+
+# 1 is added to the set
+# 2 is added to the set
+# 3 is added to the set
+# The next 3 is already in the set → repeated element found The function returns: 3  
