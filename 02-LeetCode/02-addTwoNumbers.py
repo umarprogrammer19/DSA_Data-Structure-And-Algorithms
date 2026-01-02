@@ -65,4 +65,62 @@ class Solution:
         return dummy.next
 
 
+def list_to_linkedlist(arr):
+    dummy = ListNode(0)
+    current = dummy
+    for val in arr:
+        current.next = ListNode(val)
+        current = current.next
+    return dummy.next
 
+
+def linkedlist_to_list(node):
+    result = []
+    while node:
+        result.append(node.val)
+        node = node.next
+    return result
+
+
+solution = Solution()
+
+l1 = list_to_linkedlist([2, 4, 3])
+l2 = list_to_linkedlist([5, 6, 4])
+print(linkedlist_to_list(solution.addTwoNumbers(l1, l2)))
+
+l1 = list_to_linkedlist([0])
+l2 = list_to_linkedlist([0])
+print(linkedlist_to_list(solution.addTwoNumbers(l1, l2)))
+
+l1 = list_to_linkedlist([9, 9, 9, 9, 9, 9, 9])
+l2 = list_to_linkedlist([9, 9, 9, 9])
+print(linkedlist_to_list(solution.addTwoNumbers(l1, l2)))
+
+# Explanation Example 1 Step by Step
+
+# l1: 2 -> 4 -> 3  (represents 342)
+# l2: 5 -> 6 -> 4  (represents 465)
+
+# Iteration 1:
+#   val1 = 2, val2 = 5, carry = 0
+#   total = 2+5+0 = 7
+#   new node = 7, carry = 0
+
+# Iteration 2:
+#   val1 = 4, val2 = 6, carry = 0
+#   total = 4+6+0 = 10
+#   new node = 0, carry = 1
+
+# Iteration 3:
+#   val1 = 3, val2 = 4, carry = 1
+#   total = 3+4+1 = 8
+#   new node = 8, carry = 0
+
+# Result linked list: 7 -> 0 -> 8
+
+# Time & Space Complexity
+
+# Time Complexity: O(max(m, n)) — we traverse both linked lists once.
+# Space Complexity: O(max(m, n)) — new linked list for the result.
+
+# This solution correctly handles carry, different lengths of linked lists, and returns a proper linked list without converting to integers (which LeetCode does not allow).
