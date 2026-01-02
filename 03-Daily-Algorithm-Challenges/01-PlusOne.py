@@ -82,3 +82,11 @@ print(solution.plusOne([9]))
 # map(int, ...) converts each character back to an integer
 # list(...) returns the final array of seperated digits -> 124 to [1, 2, 4]
 
+# Example
+
+# Input: digits = [1, 2, 3]
+# Convert array to string → "123"
+# Convert to integer → 123
+# Add one → 124
+# Convert back to array → [1, 2, 4]
+# Therefore, Output: [1, 2, 4]
