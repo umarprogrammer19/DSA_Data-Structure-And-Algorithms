@@ -26,6 +26,7 @@
 # nums contains n + 1 unique elements and one of them is repeated exactly n times.
 
 # Solution:
+
 from typing import List
 
 
@@ -35,6 +36,21 @@ class Solution:
             for j in range(i + 1, len(nums)):
                 if nums[i] == nums[j]:
                     return nums[i]
+
+
+solution = Solution()
+print(solution.repeatedNTimes([1, 2, 3, 3]))
+print(solution.repeatedNTimes([2, 1, 2, 5, 3, 2]))
+print(solution.repeatedNTimes([5, 1, 5, 2, 5, 3, 5, 4]))
+
+
+class Solution:
+    def repeatedNTimes(self, nums: List[int]) -> int:
+        seen = set()
+        for num in nums:
+            if num in seen:
+                return num
+            seen.add(num)
 
 
 solution = Solution()
