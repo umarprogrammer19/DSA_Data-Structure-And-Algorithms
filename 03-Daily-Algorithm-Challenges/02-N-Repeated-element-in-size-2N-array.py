@@ -29,6 +29,7 @@
 
 from typing import List
 
+# Brute Force Approach
 
 class Solution:
     def repeatedNTimes(self, nums: List[int]) -> int:
@@ -44,6 +45,40 @@ print(solution.repeatedNTimes([2, 1, 2, 5, 3, 2]))
 print(solution.repeatedNTimes([5, 1, 5, 2, 5, 3, 5, 4]))
 
 
+# Explanation
+# There is a function called repeatedNTimes which takes one parameter: nums.
+# The Solution class is provided by default as boilerplate code in LeetCode. Inside this class, there is one method called repeatedNTimes.
+
+# In this method, I use two loops:
+# The outer loop uses the variable i and iterates through the array starting from index 0.
+# The inner loop uses the variable j and starts from i + 1, so the same element is not compared with itself.
+# Inside the inner loop, I check the following condition:
+# if nums[i] == nums[j]:
+
+# If both values are equal, it means this number appears more than once in the array.
+# According to the problem statement, only one number is repeated n times, so the first duplicate we find is the answer.
+
+# As soon as a repeated number is found, the function returns that number immediately.
+
+# Example
+# Input: nums = [2, 1, 2, 5, 3, 2]
+
+# First, i = 0, so nums[i] = 2
+# Then j = 1, so nums[j] = 1 → not equal
+# Next j = 2, so nums[j] = 2
+# Since nums[0] == nums[2], a repeated element is found
+
+# Therefore, the function returns: 2 because nums[i] == nums[j] is True 
+
+# Time and Space Complexity
+
+# Time Complexity: O(n²)
+# Because two nested loops are used to compare every pair of elements.
+
+# Space Complexity: O(1)
+# No extra data structure is used.
+
+# Optimized Approach Using Set
 class Solution:
     def repeatedNTimes(self, nums: List[int]) -> int:
         seen = set()
@@ -57,3 +92,4 @@ solution = Solution()
 print(solution.repeatedNTimes([1, 2, 3, 3]))
 print(solution.repeatedNTimes([2, 1, 2, 5, 3, 2]))
 print(solution.repeatedNTimes([5, 1, 5, 2, 5, 3, 5, 4]))
+
