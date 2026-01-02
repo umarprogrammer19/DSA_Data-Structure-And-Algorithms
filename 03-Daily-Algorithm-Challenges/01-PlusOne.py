@@ -53,3 +53,32 @@ solution = Solution()
 print(solution.plusOne([1, 2, 3]))
 print(solution.plusOne([4, 3, 2, 1]))
 print(solution.plusOne([9]))
+
+# Explanation (String Conversion Method)
+
+# There is a function called plusOne which takes one parameter: digits.
+# The digits array represents a large integer, where each element is a single digit.
+# The digits are ordered from most significant to least significant.
+# In this approach, I convert the array into a number, add one to it, and then convert it back into an array.
+
+# Step-by-Step Explanation:
+# result = int("".join(map(str, digits))) + 1
+
+# map(str, digits) converts each digit into a string
+# Example: [1, 2, 3] → ["1", "2", "3"]
+
+# "".join(...) joins the strings into one number
+# Example: "123"
+
+# int(...) converts the string into an integer
+# Example: 123
+
+# + 1 increments the number by one
+# Now the updated number is stored in result.
+
+# Then return list(map(int, str(result)))
+# str(result) converts the incremented number back to a string
+# Example: "124"
+# map(int, ...) converts each character back to an integer
+# list(...) returns the final array of seperated digits -> 124 to [1, 2, 4]
+
