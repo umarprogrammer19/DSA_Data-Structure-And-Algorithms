@@ -1,5 +1,7 @@
 # 1. Two Sum (1st Of Jan 2025) -> Brute Force Algorithm
 
+# Algorithm Type: Exhaustive Search
+
 # Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 
 # You may assume that each input would have exactly one solution, and you may not use the same element twice.
