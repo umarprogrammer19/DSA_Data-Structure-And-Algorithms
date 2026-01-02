@@ -90,3 +90,11 @@ print(solution.plusOne([9]))
 # Add one → 124
 # Convert back to array → [1, 2, 4]
 # Therefore, Output: [1, 2, 4]
+
+# Time and Space Complexity
+
+# Time Complexity: O(n)
+# Because the digits array is converted to and from strings.
+
+# Space Complexity: O(n)
+# Extra space is used for string and list conversions.
