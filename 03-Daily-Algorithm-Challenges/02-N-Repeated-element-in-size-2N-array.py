@@ -113,3 +113,11 @@ print(solution.repeatedNTimes([5, 1, 5, 2, 5, 3, 5, 4]))
 # 2 is added to the set
 # 3 is added to the set
 # The next 3 is already in the set → repeated element found The function returns: 3  
+
+# Time and Space Complexity
+
+# Time Complexity: O(n)
+# The array is traversed only once.
+
+# Space Complexity: O(n)
+# A set is used to store seen elements.
