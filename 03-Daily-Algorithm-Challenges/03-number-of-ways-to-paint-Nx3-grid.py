@@ -65,3 +65,50 @@ print(solution.numOfWays(5000))
 # Y G Y
 
 # Total ways for one row of this type = 6
+
+# Base Case (n = 1)
+
+# For the first row:
+
+# a = 6  # all three cells different
+# b = 6  # first and third same
+# Total ways = a + b = 12
+
+# Transition to Next Rows
+# For every new row, we calculate how many ways we can form Type A and Type B patterns based on the previous row.
+
+# Formula
+# new_a = 3 * a + 2 * b
+# new_b = 2 * a + 2 * b
+
+
+# Why these formulas work
+
+# A Type A row can be formed from:
+    # 3 valid transitions from a previous Type A row
+    # 2 valid transitions from a previous Type B row
+
+# A Type B row can be formed from:
+    # 2 valid transitions from a previous Type A row
+    # 2 valid transitions from a previous Type B row
+
+# All calculations are done using modulo 10⁹ + 7.
+
+# Loop Explanation
+# for _ in range(2, n + 1):
+#     new_a = (3 * a + 2 * b) % MOD
+#     new_b = (2 * a + 2 * b) % MOD
+#     a, b = new_a, new_b
+
+# We start from row 2 because row 1 is already initialized.
+
+# For each row:
+# Compute new pattern counts
+# Update a and b
+
+# Final Answer
+# return (a + b) % MOD
+
+# The total number of valid ways to paint the grid is the sum of:
+# All-different patterns (a)
+# Two-same patterns (b)
