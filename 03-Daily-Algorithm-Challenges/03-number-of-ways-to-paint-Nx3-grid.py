@@ -112,3 +112,17 @@ print(solution.numOfWays(5000))
 # The total number of valid ways to paint the grid is the sum of:
 # All-different patterns (a)
 # Two-same patterns (b)
+
+# Example Walkthrough
+
+# Example 1
+# n = 1
+# -> a = 6
+# -> b = 6 
+# -> Answer a + b = 6 + 6 = 12
+
+# Example 2
+# n = 5000
+# The loop runs efficiently using constant space
+
+# Output: 30228214
