@@ -34,7 +34,7 @@ solution = Solution()
 print(solution.numOfWays(1))
 print(solution.numOfWays(5000))
 
-# Explanation 
+# Explanation:
 
 # There is a function called numOfWays which takes one parameter: n, the number of rows in the grid.
 
