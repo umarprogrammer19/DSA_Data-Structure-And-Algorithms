@@ -126,3 +126,9 @@ print(solution.numOfWays(5000))
 # The loop runs efficiently using constant space
 
 # Output: 30228214
+
+
+# Time and Space Complexity: 
+
+# Time Complexity: O(n)
+# Space Complexity: O(1) (only two variables are used)
