@@ -1,5 +1,7 @@
 # 1411. Number of Ways to Paint N × 3 Grid (3rd January 2026)
 
+# Dynamic Programming – State Transition Method
+
 # You have a grid of size n x 3 and you want to paint each cell of the grid with exactly one of the three colors: Red, Yellow, or Green while making sure that no two adjacent cells have the same color (i.e., no two cells that share vertical or horizontal sides have the same color).
 
 # Given n the number of rows of the grid, return the number of ways you can paint this grid. As the answer may grow large, the answer must be computed modulo 109 + 7.
@@ -31,3 +33,35 @@ class Solution:
 solution = Solution()
 print(solution.numOfWays(1))
 print(solution.numOfWays(5000))
+
+# Explanation 
+
+# There is a function called numOfWays which takes one parameter: n, the number of rows in the grid.
+
+# Each row has 3 cells, and each cell can be painted Red, Yellow, or Green, with the condition that no two adjacent cells (horizontally or vertically) have the same color.
+
+# Because the answer can be very large, all calculations are done modulo 10⁹ + 7.
+
+# Process
+# For each row, there are only two valid pattern types:
+# 1️⃣ Type A (a):
+
+# All three cells are different colors
+
+# Example patterns: (R = Red, Y = Yellow, G = Green)
+# R Y G
+# R G Y
+# Y R G
+
+# Total ways for one row of this type = 6
+
+# 2️⃣ Type B (b):
+
+# First and third cells are the same color, middle is different
+
+# Example patterns:
+# R Y R
+# G R G
+# Y G Y
+
+# Total ways for one row of this type = 6
