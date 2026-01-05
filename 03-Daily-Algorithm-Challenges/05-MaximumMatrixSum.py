@@ -7,11 +7,20 @@
 
 # Example 1:
 
-# 03-Daily-Algorithm-Challenges/problemset_diagrams/05-MaxMatrixSum1.png (see the image in diagrams folder)
+# 03-Daily-Algorithm-Challenges/problemset_diagrams/05-MaxMatrixSum1.png (check the image in diagrams folder)
 
 # Input: matrix = [[1,-1],[-1,1]]
 # Output: 4
 # Explanation: We can follow the following steps to reach sum equals 4:
 # - Multiply the 2 elements in the first row by -1.
 # - Multiply the 2 elements in the first column by -1.
+
+# Example 2:
+
+# 03-Daily-Algorithm-Challenges/problemset_diagrams/05-MaxMatrixSum2.png (check the image in diagrams folder)
+
+# Input: matrix = [[1,2,3],[-1,-2,-3],[1,2,3]]
+# Output: 16
+# Explanation: We can follow the following step to reach sum equals 16:
+# - Multiply the 2 last elements in the second row by -1.
 
