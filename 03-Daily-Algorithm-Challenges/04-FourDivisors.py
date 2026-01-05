@@ -60,3 +60,10 @@ class Solution:
                 total_sum += div_sum
 
         return total_sum
+
+
+solution = Solution()
+
+print(solution.sumFourDivisors([21, 4, 7]))
+print(solution.sumFourDivisors([21, 21]))
+print(solution.sumFourDivisors([1, 2, 3, 4, 5]))
