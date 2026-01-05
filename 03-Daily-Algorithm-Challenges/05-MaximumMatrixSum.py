@@ -58,3 +58,40 @@ class Solution:
 solution = Solution()
 print(solution.maxMatrixSum(matrix=[[1, -1], [-1, 1]]))
 print(solution.maxMatrixSum(matrix=[[1, 2, 3], [-1, -2, -3], [1, 2, 3]]))
+
+# Logic
+
+# Let:
+# total_sum = sum of absolute values
+# negative_count = count of negative numbers
+# min_abs = smallest absolute value
+
+# Case 1: Even negatives
+
+# ✅ We can flip all negatives to positives
+# ➡️ Answer = total_sum
+
+# Case 2: Odd negatives
+
+# ❌ One number must stay negative
+# ➡️ Choose the smallest absolute value
+# ➡️ Subtract 2 × min_abs
+
+# Example 1
+# matrix = [[1, -1], [-1, 1]]
+# Absolute sum = 4
+# Negative count = 2 (even)
+# ✅ Result = 4
+
+# Example 2
+# matrix = [[1, 2, 3], [-1, -2, -3], [1, 2, 3]]
+# Absolute sum = 18
+# Negative count = 3 (odd)
+# Smallest abs value = 1
+# 18 - (2 × 1) = 16
+# ✅ Result = 16
+
+# | Type  | Complexity |
+# | ----- | ---------- |
+# | Time  |     O(n²)  |
+# | Space |     O(1)   |
