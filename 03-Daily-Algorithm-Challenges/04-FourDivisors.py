@@ -6,7 +6,7 @@
 
 # Input: nums = [21,4,7]
 # Output: 32
-# Explanation: 
+# Explanation:
 # 21 has 4 divisors: 1, 3, 7, 21
 # 4 has 3 divisors: 1, 2, 4
 # 7 has 2 divisors: 1, 7
@@ -26,3 +26,37 @@
 
 # 1 <= nums.length <= 104
 # 1 <= nums[i] <= 105
+
+
+# Solution
+
+from typing import List
+
+
+class Solution:
+    def sumFourDivisors(self, nums: List[int]) -> int:
+        total_sum = 0
+
+        for num in nums:
+            count = 0
+            div_sum = 0
+
+            i = 1
+            while i * i <= num:
+                if num % i == 0:
+                    count += 1
+                    div_sum += i
+
+                    other = num // i
+                    if other != i:
+                        count += 1
+                        div_sum += other
+
+                    if count > 4:
+                        break
+                i += 1
+
+            if count == 4:
+                total_sum += div_sum
+
+        return total_sum
