@@ -28,7 +28,7 @@
 # 1 <= nums[i] <= 105
 
 
-# Solution
+# Solution (Divisor Counting Approach)
 
 from typing import List
 
@@ -67,3 +67,16 @@ solution = Solution()
 print(solution.sumFourDivisors([21, 4, 7]))
 print(solution.sumFourDivisors([21, 21]))
 print(solution.sumFourDivisors([1, 2, 3, 4, 5]))
+
+# Explanation
+
+# There is a function called sumFourDivisors which takes one parameter: nums, an array of integers.
+# The goal is to find numbers in the array that have exactly four divisors and return the sum of those divisors.
+# If no number has exactly four divisors, we return 0.
+
+# Idea
+
+# Every integer has divisors that come in pairs.
+# If i divides num, then num // i is also a divisor.
+# We only need to check divisors up to √num.
+# As soon as the number of divisors becomes more than 4, we stop checking (optimization).
