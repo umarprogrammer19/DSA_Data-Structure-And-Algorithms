@@ -24,3 +24,37 @@
 # Explanation: We can follow the following step to reach sum equals 16:
 # - Multiply the 2 last elements in the second row by -1.
 
+# Constraints:
+
+# n == matrix.length == matrix[i].length
+# 2 <= n <= 250
+# -105 <= matrix[i][j] <= 105
+
+from typing import List
+
+
+class Solution:
+    def maxMatrixSum(self, matrix: List[List[int]]) -> int:
+        total_sum = 0
+        negative_count = 0
+        min_abs = float("inf")
+
+        for row in matrix:
+            for val in row:
+                total_sum += abs(val)
+
+                if val < 0:
+                    negative_count += 1
+
+                min_abs = min(min_abs, abs(val))
+
+        # If number of negatives is odd, one smallest absolute value stays negative
+        if negative_count % 2 == 1:
+            total_sum -= 2 * min_abs
+
+        return total_sum
+
+
+solution = Solution()
+print(solution.maxMatrixSum(matrix=[[1, -1], [-1, 1]]))
+print(solution.maxMatrixSum(matrix=[[1, 2, 3], [-1, -2, -3], [1, 2, 3]]))
