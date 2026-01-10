@@ -64,3 +64,43 @@ class Solution:
             level += 1
 
         return answer_level
+    
+# Explanation
+# Approach (Level Order Traversal)
+
+# We:
+    # Traverse the tree level by level
+    # Calculate the sum of nodes at each level
+
+# Track:
+    # Maximum sum seen so far
+    # The level where that maximum occurred
+    # Return the smallest level with the maximum sum
+
+# Algorithm (Step-by-Step)
+
+# Step 1: Initialize
+    
+# 1) Use a queue (FIFO) for BFS
+# 2) Start with the root
+
+# 3) Set:
+        # level = 1
+        # max_sum = -∞
+        # answer_level = 1
+
+# Step 2: BFS Traversal
+
+# While queue is not empty:
+
+# 1) Get number of nodes at current level (size)
+# 2) Initialize level_sum = 0
+# 3) Process all nodes in this level:
+        # Add node value to level_sum
+        # Push left and right children into queue (if they exist)
+
+# Step 3: Compare
+
+# If level_sum > max_sum
+    # Update max_sum
+    # Update answer_level
