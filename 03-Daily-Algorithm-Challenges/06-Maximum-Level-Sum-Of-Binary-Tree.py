@@ -120,3 +120,8 @@ class Solution:
 # Level 3 → 7 + (-8) = -1
 
 # -> Maximum sum is 7 at level 2
+
+# Time & Space Complexity
+
+# 1) Time Complexity O(n) because Each node is visited exactly once
+# 2) Space Complexity O(n) because Queue may store up to one full level of nodes
