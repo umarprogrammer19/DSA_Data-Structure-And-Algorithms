@@ -111,3 +111,12 @@ class Solution:
 
 # Step 5: Return answer
 # Return answer_level
+
+# Example
+# Tree: [1,7,0,7,-8]
+
+# Level 1 → 1
+# Level 2 → 7 + 0 = 7  ✅
+# Level 3 → 7 + (-8) = -1
+
+# -> Maximum sum is 7 at level 2
