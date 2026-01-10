@@ -104,3 +104,9 @@ class Solution:
 # If level_sum > max_sum
     # Update max_sum
     # Update answer_level
+
+# Step 4: Move to next level
+# Increment level
+
+# Step 5: Return answer
+# Return answer_level
