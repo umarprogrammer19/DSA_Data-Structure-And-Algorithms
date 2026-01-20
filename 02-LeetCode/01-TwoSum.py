@@ -63,7 +63,7 @@ print(solution.twoSum(nums=[3, 3], target=6))  # [0, 1]
 
 # Input: nums = [2, 7, 11, 15], target = 9
 
-# First, i = 0, so nums[i] = 2 -> because index 0 has value which is 2 
+# First, i = 0, so nums[i] = 2 -> because index 0 has value which is 2
 # Then j = 1, so nums[j] = 7 -> because index 1 has value which is 7
 # nums[0] + nums[1] = 2 + 7 = 9, which is equal to the target
 # Therefore, the function returns [0, 1]
