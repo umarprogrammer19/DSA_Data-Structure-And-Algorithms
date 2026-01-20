@@ -38,3 +38,4 @@ class Solution:
 
 solution = Solution()
 solution.lengthOfLongestSubstring("pwwkew")
+solution.lengthOfLongestSubstring("awwbew")
