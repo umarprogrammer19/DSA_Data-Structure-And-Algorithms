@@ -17,7 +17,7 @@
 
 # Example 2:
 
-# Input: root = [989,null,10250,98693,-89388,null,null,null,-32127]
+# Input: root = [989, null, 10250, 98693, -89388, null, null, null, -32127]
 # Output: 2
 
 # Constraints:
