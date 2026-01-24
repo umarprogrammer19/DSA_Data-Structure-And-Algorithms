@@ -6,7 +6,7 @@
 
 # Example 1:
 # 03-Daily-Algorithm-Challenges/problemset_diagrams/06-Maximum-Level-Sum-Of-Binary-Tree.JPG
-# Input: root = [1,7,0,7,-8,null,null]
+# Input: root = [1, 7, 0, 7, -8, null, null]
 # Output: 2
 
 # Explanation:
