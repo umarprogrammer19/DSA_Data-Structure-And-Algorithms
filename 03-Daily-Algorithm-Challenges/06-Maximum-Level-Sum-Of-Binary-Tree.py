@@ -113,7 +113,7 @@ class Solution:
 # Return answer_level
 
 # Example
-# Tree: [1,7,0,7,-8]
+# Tree: [1, 7, 0, 7, -8]
 
 # Level 1 → 1
 # Level 2 → 7 + 0 = 7  ✅
