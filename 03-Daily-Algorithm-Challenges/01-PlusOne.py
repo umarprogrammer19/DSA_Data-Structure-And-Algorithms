@@ -52,7 +52,7 @@ solution = Solution()
 
 print(solution.plusOne([1, 2, 3])) # [1, 2, 4]
 print(solution.plusOne([4, 3, 2, 1])) # [4, 3, 2, 2]
-print(solution.plusOne([9]))
+print(solution.plusOne([9])) # [1, 0]
 
 # Explanation (String Conversion Method)
 
