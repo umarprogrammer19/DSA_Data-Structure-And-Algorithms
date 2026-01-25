@@ -51,7 +51,7 @@ class Solution:
 solution = Solution()
 
 print(solution.plusOne([1, 2, 3])) # [1, 2, 4]
-print(solution.plusOne([4, 3, 2, 1]))
+print(solution.plusOne([4, 3, 2, 1])) # [4, 3, 2, 2]
 print(solution.plusOne([9]))
 
 # Explanation (String Conversion Method)
