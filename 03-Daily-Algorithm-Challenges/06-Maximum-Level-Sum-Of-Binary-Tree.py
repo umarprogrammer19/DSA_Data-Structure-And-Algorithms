@@ -91,7 +91,6 @@ class Solution:
         # answer_level = 1
 
 # Step 2: BFS Traversal
-
 # While queue is not empty:
 
 # 1) Get number of nodes at current level (size)
